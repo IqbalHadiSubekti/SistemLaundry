@@ -1,3 +1,5 @@
+from datetime import datetime
+
 pilihan = "c"
 
 while pilihan == "c" :
@@ -53,7 +55,8 @@ while pilihan == "c" :
     uang = int(input("Uang Tunai Pembeli: Rp."))
     kembalian = uang-semua
     print("Kembalian : Rp.",kembalian)
-    keluar = str(input("Masukkan tanggal keluar: "))
+    #keluar = str(input("Masukkan tanggal keluar: "))
+    tanggal_saat_ini = datetime.date.today()
         
     print("\n=========================================")
 
@@ -65,7 +68,7 @@ while pilihan == "c" :
     print(" Diskon       :", diskon)
     print(" Tagihan      : Rp.",semua)
     print(" Tanggal Masuk  : ", masuk)
-    print(" Tanggal Diambil:", keluar)
+    print(" Tanggal Diambil:", tanggal_saat_ini)
     print(" Uang         : Rp.",uang)
     print(" Kembalian    : Rp.",kembalian)
     print("===========================================")
